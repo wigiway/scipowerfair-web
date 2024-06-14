@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url('./images/bg.png'); /* เปลี่ยน path_to_your_image.jpg เป็น path ของรูปภาพของคุณ */
+  background-image: url('./images/scipowerimagetrack.png'); /* เปลี่ยน path_to_your_image.jpg เป็น path ของรูปภาพของคุณ */
   background-size: contain; /* ทำให้ภาพพื้นหลังครอบคลุมทั้งหน้าจอโดยไม่ให้ส่วนใดหายไป */
   background-repeat: no-repeat;
   background-position: center;
