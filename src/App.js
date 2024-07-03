@@ -3,7 +3,7 @@ import './App.css';
 
 const App = () => {
   const handleClick = () => {
-    window.location.href = 'https://vxg9g.webar.run/8237427486333416546/0.0.2/';
+    window.location.href = 'https://vxg9g.webar.run/8237427486333416546/0.0.4/';
   };
 
   return (
