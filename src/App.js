@@ -4,13 +4,13 @@ import './App.css';
 const App = () => {
   const handleClick = async () => {
     try {
-      // ส่งคำขอไปยัง API endpoint
+      // ส่งคำขอไปยัง API endpoint พร้อมกับ total_view
       const response = await fetch('https://wigiway-api.vercel.app/api/scipowerTotalView', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ views: 1 }), // สมมุติว่าต้องการเพิ่ม views ขึ้น 1
+        body: JSON.stringify({ total_view: 'your_total_view_key', views: 1 }), // เปลี่ยน 'your_total_view_key' เป็นค่า primary key ที่คุณต้องการ
       });
 
       if (!response.ok) {
@@ -32,3 +32,4 @@ const App = () => {
 };
 
 export default App;
+
