@@ -10,7 +10,7 @@ const App = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ total_view: 'your_total_view_key', views: 1 }), // เปลี่ยน 'your_total_view_key' เป็นค่า primary key ที่คุณต้องการ
+        body: JSON.stringify({ total_view: 'total_view', views: 1 }), // เปลี่ยน 'your_total_view_key' เป็นค่า primary key ที่คุณต้องการ
       });
 
       if (!response.ok) {
