@@ -2,8 +2,26 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
-  const handleClick = () => {
-    window.location.href = 'https://vxg9g.webar.run/8237427486333416546/0.0.5/';
+  const handleClick = async () => {
+    try {
+      // ส่งคำขอไปยัง API endpoint
+      const response = await fetch('https://wigiway-api.vercel.app/api/scipowerTotalView', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ views: 1 }), // สมมุติว่าต้องการเพิ่ม views ขึ้น 1
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      // เมื่อคำขอสำเร็จแล้ว เปลี่ยนเส้นทางไปยัง URL ที่ต้องการ
+      window.location.href = 'https://vxg9g.webar.run/8237427486333416546/0.0.5/';
+    } catch (error) {
+      console.error('There was a problem with the fetch operation:', error);
+    }
   };
 
   return (
